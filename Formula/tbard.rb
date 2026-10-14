@@ -2,6 +2,8 @@ class Tbard < Formula
   desc "Audiobook manager and listener for the terminal: your Audible library, chapter-split downloads, playback with mpv and position sync"
   homepage "https://abelland-lgtm.github.io/tbard/"
   version "0.1.0"
+  depends_on "ffmpeg"
+  depends_on "mpv"
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/abelland-lgtm/tbard/releases/download/v0.1.0/tbard-aarch64-apple-darwin.tar.xz"
